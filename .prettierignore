@@ -1,0 +1,12 @@
+/dist/*
+.local
+/node_modules/**
+
+**/*.svg
+**/*.sh
+
+/static/**
+/public/*
+/unpackage/**
+
+.hbuilderx/**

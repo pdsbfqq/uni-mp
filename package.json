@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "npm run dev:h5",
+    "dev:mode-test": "cross-env NODE_ENV=development UNI_PLATFORM=h5 vue-cli-service uni-serve --mode mode-test",
     "build": "npm run build:h5",
     "build:app-plus": "cross-env NODE_ENV=production UNI_PLATFORM=app-plus vue-cli-service uni-build",
     "build:custom": "cross-env NODE_ENV=production uniapp-cli custom",
@@ -50,7 +51,7 @@
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.1-36420220922001",
     "@dcloudio/uni-h5": "^2.0.1-36420220922001",
-    "@dcloudio/uni-helper-json": "*",
+    "@dcloudio/uni-helper-json": "^1.0.13",
     "@dcloudio/uni-i18n": "^2.0.1-36420220922001",
     "@dcloudio/uni-mp-360": "^2.0.1-36420220922001",
     "@dcloudio/uni-mp-alipay": "^2.0.1-36420220922001",
@@ -75,7 +76,8 @@
     "vuex": "^3.2.0"
   },
   "devDependencies": {
-    "@babel/runtime": "~7.17.9",
+    "@babel/eslint-parser": "^7.12.16",
+    "@babel/runtime": "~7.12.0",
     "@dcloudio/types": "^3.0.4",
     "@dcloudio/uni-automator": "^2.0.1-36420220922001",
     "@dcloudio/uni-cli-i18n": "^2.0.1-36420220922001",
@@ -88,13 +90,22 @@
     "@dcloudio/webpack-uni-mp-loader": "^2.0.1-36420220922001",
     "@dcloudio/webpack-uni-pages-loader": "^2.0.1-36420220922001",
     "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "babel-plugin-import": "^1.11.0",
     "cross-env": "^7.0.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-define-config": "^1.7.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
     "jest": "^25.4.0",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
     "postcss-comment": "^2.0.0",
+    "prettier": "^2.4.1",
+    "sass": "^1.55.0",
+    "sass-loader": "10",
     "vue-template-compiler": "^2.6.14"
   },
   "browserslist": [
@@ -102,7 +113,7 @@
     "ios >= 9"
   ],
   "resolutions": {
-    "@babel/runtime": "~7.17.9"
+    "@babel/runtime": "~7.12.0"
   },
   "uni-app": {
     "scripts": {}

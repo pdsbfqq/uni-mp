@@ -1,6 +1,6 @@
 <template>
-  <view class="content">
-    <image class="logo" src="/static/logo.png"></image>
+  <view>
+    <view class="status_bar"> </view>
     <view>
       {{ count }}
       <button class="btn" @click="onClick"> on click</button>
@@ -16,7 +16,7 @@ export default {
     };
   },
   onLoad() {
-    console.log(process.env);
+    console.log(`process.env`, process.env);
   },
   methods: {
     onClick() {
@@ -27,28 +27,12 @@ export default {
 </script>
 
 <style>
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.status_bar {
+  height: var(--status-bar-height);
+  width: 100%;
+  background-color: #f5f6f7;
 }
 
-.logo {
-  height: 200rpx;
-  width: 200rpx;
-  margin: 200rpx auto 50rpx auto;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
-}
 .btn {
   border: 10px solid #8f8f94;
   padding: 10px 14px;

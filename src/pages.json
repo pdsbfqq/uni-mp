@@ -4,7 +4,8 @@
     {
       "path": "pages/index/index",
       "style": {
-        "navigationBarTitleText": "uni-app"
+        "navigationBarTitleText": "uni-app",
+        "navigationStyle": "custom"
       }
     },
     {
@@ -12,8 +13,45 @@
       "style": {
         "navigationBarTitleText": "me"
       }
+    },
+    {
+      "path": "pages/shop/index",
+      "style": {
+        "navigationBarTitleText": "shop"
+      }
     }
   ],
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#ff6600",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "fontSize": "14px",
+        "spacing": "6px",
+        "iconPath": "static/tabbar-icons/home.png",
+        "selectedIconPath": "static/tabbar-icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/shop/index",
+        "text": "商品",
+        "spacing": "6px",
+        "fontSize": "14px",
+        "iconPath": "static/tabbar-icons/shop.png",
+        "selectedIconPath": "static/tabbar-icons/shop-active.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我的",
+        "fontSize": "14px",
+        "spacing": "6px",
+        "iconPath": "static/tabbar-icons/user.png",
+        "selectedIconPath": "static/tabbar-icons/user-active.png"
+      }
+    ]
+  },
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",

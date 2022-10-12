@@ -1,14 +1,14 @@
 <template>
-  <div class="me">me</div>
+  <div class="shop">shop</div>
 </template>
 
 <script>
 export default {
-  name: 'me',
+  name: "shop",
   components: {},
   props: {},
   data() {
-    return {};
+    return {}
   },
   computed: {},
   methods: {},
@@ -23,7 +23,7 @@ export default {
   // 页面周期函数--监听页面隐藏
   onHide() {},
   // 页面周期函数--监听页面卸载
-  onUnload() {}
+  onUnload() {},
   // 页面处理函数--监听用户下拉动作
   // onPullDownRefresh() { uni.stopPullDownRefresh(); },
   // 页面处理函数--监听用户上拉触底
@@ -32,7 +32,7 @@ export default {
   // onPageScroll(event) {},
   // 页面处理函数--用户点击右上角分享
   // onShareAppMessage(options) {},
-};
+} 
 </script>
 
 <style lang="scss" scoped></style>
